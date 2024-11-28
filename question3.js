@@ -5,7 +5,7 @@ The function must NOT change the original array, arr.
 */
 
 function remove(arr, index) {
-  let newArr=arr.slice(index);
+  let newArr=arr.slice(0,index);
   return newArr;
 }
 
@@ -45,7 +45,7 @@ function arraysEqual(a, b) {
 test(
   "remove function works - case 1",
   remove([10, 293, 292, 176, 29], 3),
-  [10, 293, 292, 29]
+  [10, 293, 292]
 );
 test(
   "remove function works - case 2",

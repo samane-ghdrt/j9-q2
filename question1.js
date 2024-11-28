@@ -12,34 +12,7 @@
  */
 
 function tidyUpString(strArr) {
-  // for(let newWord of strArr){
-  //   newWord.trim().toLowerCase();
-  //   let arrNew=newWord.split('');
-  //   if (arrNew[0]==="/") {
-  //     arrNew.shift();
-  //   }
-  //   arrNew.join('');
-  // }
-  strArr.filter((string)=>{
-   let newString= string.trim().toLowerCase();
-    let arrNew=newString.split('');
-    if (arrNew[0]==="/") {
-      arrNew.shift();
-      arrNew.join('');
-      return arrNew;
-    }
-    arrNew.join('');
-    return arrNew;
-  })
-  // for (let i = 0; i < strArr.length; i++) {
-  // arr[i]=strArr[i].tolowercase();
-  // arr[i]=arr[i].trim();
-  // let arrNew=arr[i].split('');
-  // if (arrNew[0]==="/") {
-  //   arrNew.shift();
-  //   arr[i]=arrNew.join('');   
-  // }
-  // }
+  return strArr.map(str => str.trim().replaceAll('/','').toLowerCase());
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */

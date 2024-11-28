@@ -6,7 +6,22 @@ Write a function that:
 - numbers greater 100 must be replaced with 100 (e.g. 135 => '100%')
 */
 
-function formatPercentage(arr) {}
+function formatPercentage(arr) {
+  let arrNew=[];
+  let num ;
+  for (let i = 0; i < arr.length; i++) {
+    if(arr[i]>=100){
+      arrNew.push('100%');
+    } else if((arr[i]<100) && (arr[i]-Math.floor(arr[i]) !== 0)) {
+      num=arr[i].toFixed(2);
+      arrNew.push(`${num}%`);
+    }else{
+      arrNew.push(`${arr[i]}%`);
+    }
+    
+  }
+  return arrNew;
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

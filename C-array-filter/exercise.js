@@ -8,7 +8,7 @@
 
 const pairsByIndexRaw = [[0, 3], [1, 2], [2, 1], null, [1], false, 'whoops'];
 
-let pairsByIndex; // Complete this statement
+let pairsByIndex=pairsByIndexRaw.filter(a=>Array.isArray(a)); // Complete this statement
 
 console.log(pairsByIndex);
 const students = ['Javad', 'Anahid', 'Mina', 'Atena'];
