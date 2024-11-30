@@ -11,12 +11,12 @@ const pairsByIndexRaw = [[0, 3], [1, 2], [2, 1], null, [1], false, 'whoops'];
 let pairsByIndex=pairsByIndexRaw.filter(a=>Array.isArray(a)); // Complete this statement
 
 console.log(pairsByIndex);
-const students = ['Javad', 'Anahid', 'Mina', 'Atena'];
+const students1 = ['Javad', 'Anahid', 'Mina', 'Atena'];
 const mentors = ['Shirin', 'Bahar', 'Maryam', 'Ayda'];
 
 const pairs = pairsByIndex.map(function (indexes) {
-  const student = students[indexes[0]];
-  const mentor = mentors[indexes[1]];
+  let student = students1[indexes[0]];
+  let mentor = mentors[indexes[1]];
   return [student, mentor];
 });
 

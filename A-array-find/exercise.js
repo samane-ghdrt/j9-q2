@@ -18,7 +18,7 @@ let names = [
 ];
 
 function  findLongNameThatStartsWithA(params) { 
-  return params.find(name => (name.startsWith('a')) && (name.length > 7));} // create the function
+  return params.find(name => (name.startsWith('A')) && (name.length > 7));} // create the function
 
 
 let longNameThatStartsWithA =findLongNameThatStartsWithA(names); // call the function
